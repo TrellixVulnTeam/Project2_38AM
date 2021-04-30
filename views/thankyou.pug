@@ -1,0 +1,46 @@
+extends layout
+
+block content
+    head
+        link(rel='preconnect' href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' rel='stylesheet')
+        link(rel='StyleSheet' href='css/styles.css' type='text/css')
+        link(rel='StyleSheet' href='css/nav.css' type='text/css')
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        meta(charset='utf-8')
+    body
+        header
+            nav
+                img.logo(src='images/Logo.png' alt='Logo' width='7%' style='float: left; padding-right: 10px; margin: 0 0 15px ;')
+                ul
+                    li
+                        a(href='/register') Sign Up
+                    li
+                        a(href='/register') Log In
+                    li
+                        a(href='#') About Us
+                    li
+                        a(href='/') Home
+        main
+            section#intro-text
+                span Pro-Am Insurance
+                h3
+                    | Simple &amp; Fast 
+                    br
+                    |             View and change your policies
+            section#intro-thank
+                h3 Thank you for your registration!
+        footer
+            img(src='images/Logo.png' alt='Logo' width='4%' style='float: left; padding-right: 10px;')
+            div(style='float: right;')
+                h3 Follow us on
+                a.fa.fa-facebook(href='#')
+                a.fa.fa-twitter(href='#')
+                a.fa.fa-instagram(href='#')
+            ul
+                li(style='list-style: none; display: inline')
+                a(href='/') Home
+                li(style='list-style: none; display: inline') |
+                li(style='list-style: none; display: inline')
+                a(href='#') About Us
+            | &copy; Copyright 2021

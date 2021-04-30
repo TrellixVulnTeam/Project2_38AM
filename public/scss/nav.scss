@@ -1,0 +1,24 @@
+@import "colors";
+/* Nest Nav */
+nav {
+    font: {
+        size: 1em;
+        font-weight: bold;
+    }
+    float: left;
+    ul {
+        list-style-type: none;
+        li {
+            float: right;
+            margin: 0 5px 0 0;
+            color: $color3;
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+               }
+               color: $color3;
+           }
+       }
+   }
+}
